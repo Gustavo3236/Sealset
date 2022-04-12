@@ -1,0 +1,324 @@
+body {
+    background: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    /*background: url("img/bg.jpg");*/
+    background-color: #cccccc;
+    width: 100%;
+}
+
+#logo {
+    height: 300px;
+}
+
+.titulo-principal {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 110px;
+    right: 270px;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+.header-logo {
+    background: linear-gradient(#aaaaaa, #eeeeee 40%);
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s all;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a:hover {
+    color: #17365d;
+}
+
+.whatsapp img {
+    height: 50px;
+    transition: 1s;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.2);
+}
+
+.titulo-produtos {
+    /* background: linear-gradient(#cccccc, #eeeeee 40%); */
+    background-color: #eeeeee;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    padding: 1em 0;
+    text-shadow: 1px 1px 4px #a0a0a0;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.img-produtos {
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+    transition: 600ms;
+    box-shadow: 0px 3px 5px #000000;
+}
+
+.img-produtos:hover {
+    opacity: 0.9;
+    height: 252px;
+}
+
+.produtos li:hover h2 {
+    font-size: 30px;
+}
+
+.produtos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.produtos-descricao {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-tabela {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-display: inline-block;
+    position: relative;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: #ffffff;
+}
+
+td, th {
+    border: solid 1px #000000;
+    padding: 8px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form fieldset {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#titulo-fieldset {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+}
+
+#titulo-fieldset::before {
+    content: "👥";
+}
+
+form legend, .formulario-texto {
+    color: #222222;
+    font-size: 22px;
+    width: 90%;
+}
+
+.formulario-texto label {
+    display: block;
+    margin: 10px 0;
+}
+
+.formulario-texto input, textarea {
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 15px;
+    width: 50%;
+}
+
+#email-icone {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#telefone-icone {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#local-icone {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+#enviar {
+    color: #eeeeee;
+    background: #555555;
+    width: 40%;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 1s all;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#enviar:hover {
+    background: #17365d;
+    transform: scale(0.9);
+}
+
+#mapa {
+    width: 940px;
+    position: absolute;
+    top: 230px;
+    width: 50%;
+    right: 0px;
+}
+
+.barra {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#logo-footer {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 30px;
+}
+
+footer {
+    /*background: url("img/bg.jpg");*/
+    background-color: #cccccc;
+    text-align: center;
+    padding: 40px 0;
+    color: #5f5f5f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 20px 0 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .caixa, #div-cotacao, .titulo-principal, .produtos, .produtos li, .div-tabela, form, #formulario-texto{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+        padding-bottom: 1em;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .div-tabela {
+        display: block;
+        margin-left: 5px;
+    }
+
+    form fieldset {
+        display: block;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .formulario-texto {
+        margin-top: 30px;
+    }
+
+    .formulario-texto input {
+        margin-top: 15px;
+    }
+
+    #mapa {
+        display: block;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 300px;
+        right: 0px;
+    }
+    
+    #logo {
+        padding-top: 20px;
+        height: 250px;
+        padding-bottom: 20px;
+    }
+
+    .img-produtos {
+        height: 250px;
+    }
+
+    .whatsapp {
+        position: absolute;
+        left: -10px;
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .produtos, .titulo-principal {
+        width: auto;
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+        text-align: center;
+    }
+    
+}

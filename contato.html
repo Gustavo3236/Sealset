@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+
+        <title>Contato - SEALSET Indústria e Comércio Ltda.</title>
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="img/ico" href="img/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@300&family=Oswald:wght@300&family=Playfair+Display&family=Public+Sans:wght@300&family=Roboto+Condensed&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header-logo">
+            <header>
+                <h1 class="titulo-principal"><img id="logo" src="img/logo.jpg" alt="sealset"></h1>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a class="whatsapp" target="blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=5511992395384"><img src="img/whatsapp.png"></a></li>
+                </ul>
+            </header>
+            <main>
+                <div class="div-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>8h ~ 17h</td>
+                            </tr>
+                            <tr>
+                                <td>Terça</td>
+                                <td>8h ~ 17h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>8h ~ 17h</td>
+                            </tr>
+                            <tr>
+                                <td>Quinta</td>
+                                <td>8h ~ 17h</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>8h ~ 16h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <form>
+                        <fieldset>
+                            <legend id="titulo-fieldset">Solicite uma Cotação</legend>
+                            <legend>E-mail</legend>
+                            <legend><img id="email-icone" src="img/o-email.png">vendas@sealset.com.br <strong class="barra">/</strong> elaine@sealset.com.br</legend><br>
+                            <legend>Tel</legend>
+                            <legend><img id="telefone-icone" src="img/telefone.png">(11) 2205-5799 <strong class="barra">/</strong> (11) 2944-1778</legend><br>
+                            <legend>Localização</legend>
+                            <legend><img id="local-icone" src="img/local-icon.png">R. Campinas do Piauí, 492 - Itaquera, São Paulo - SP, 08210-000</legend>
+                        </fieldset>
+                    </form>
+
+                    <form id="formulario-texto" class="formulario-texto" method="POST" action="email.php">
+                        <label for="nome">Nome</label>
+                        <input class="field" id="nome" type="name" name="name" placeholder="Digite seu nome *" required>
+                        
+                        <label for="email">E-mail</label>
+                        <input class="field" id="email" type="email" name="email" required placeholder="seuemail@dominio.com.br *">
+
+                        <label for="telefone">Telefone</label>
+                        <input class="field" id="telefone" type="tel" name="tel" placeholder="(xx)xxxxx-xxxx *" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="field" id="mensagem" name="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui. *"></textarea>
+                        
+                        <input class="field" id="enviar" type="submit" value="Enviar Formulário">
+
+                    <!--    <iframe id="mapa" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58517.665860127716!2d-46.46593025332227!3d-23.55572207940221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66966c50ed3b%3A0xde15356030a88cc8!2sSealset%20Embalagens!5e0!3m2!1spt-BR!2sbr!4v1647117248861!5m2!1spt-BR!2sbr" 
+                        width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </form> 
+
+                </div>
+            </main>
+        </div>
+        <footer>
+            <img id="logo-footer" src="img/logo.jpg">
+            <p>Endereço: R. Campinas do Piauí, 492 - Itaquera, São Paulo - SP, 08210-000</p>
+            <p class="copyright"><strong>&copy; SEALSET - Indústria e Comércio Ltda.</strong></p>
+        </footer>
+    </body>
+</html>
