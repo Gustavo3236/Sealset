@@ -279,8 +279,13 @@ footer {
         margin-top: 30px;
     }
 
-    .formulario-texto input {
+    .formulario-texto input, .formulario-texto textarea {
         margin-top: 15px;
+        width: 90%;
+    }
+
+    #enviar {
+        width: 98%;
     }
 
     #mapa {
