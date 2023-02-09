@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEALSET - Contato</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        preto: '#000000',
+                        branco: '#FFFFFF',
+                        cinza: {
+                            padrao: '#5f5f5f',
+                            claro: '#C4C4C4',
+                            escuro: '#444444'
+                        },
+                        azul: {
+                            sealset: '#17365d'
+                        },
+                        corDeFundo: '#eeeeee',
+                        gradient: {
+                            escuro: '#8f8f8f',
+                            claro: '#cccccc'
+                        },
+                    },
+                    fontFamily: {
+                        principal: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-principal bg-corDeFundo">
+    <header class="p-4 lg:p-0 grid grid-flow-cols-2 grid-flow-rows-2 bg-gradient-to-r from-gradient-escuro to-gradient-claro gap-4 lg:grid-cols-2">
+        <img class="w-8/12 col-span-2 justify-self-center sm:w-5/12 md:w-4/12 lg:row-start-1 lg:row-end-3 lg:col-span-1 lg:w-5/12" src="./assets/img/logo.jpg" alt="logotipo da sealset">
+        <button class="botao-menu w-10 row-start-2 col-start-1 self-center border-solid border border-cinza-padrao p-2 hover:cursor-pointer active:bg-cinza-padrao active:-scale-50 duration-1000 lg:hidden"><img class="w-full" src="./assets/img/menu-hamburguer.svg" alt="botão menu lateral"></button>
+        <h1 class="lg:p-4 row-start-2 col-start-2 justify-self-end self-center text-cinza-padrao font-medium text-sm">&copy; Sealset Lacres</h1>
+        <ul class="hidden lg:block lg:flex gap-x-8 justify-center fixed top-0 w-full z-10 bg-preto p-0 opacity-60 text-branco font-medium lg:p-2.5 text-xl">
+            <li><a class="hover:text-azul-sealset duration-500" href="./index.html">Home</a></li>
+            <li><a class="hover:text-azul-sealset duration-500" href="./produtos.html">Produtos</a></li>
+            <li><a class="hover:text-azul-sealset duration-500" href="./contato.html">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <nav class="menu-lateral z-10 duration-500 h-screen w-9/12 bg-cinza-padrao opacity-95 shadow-md shadow-cinza-padrao grid auto-rows-min gap-4 p-2">
+            <img class="w-6/12 sm:w-5/12 md:w-4/12 justify-self-center" src="./assets/img/logo.jpg" alt="logotipo do menu lateral">
+            <ul class="text-branco grid gap-2 text-lg auto-rows-min font-medium">
+                <li class="hover:text-azul-sealset hover:border-azul-sealset border-l-2 duration-500 "><a class="pl-2" href="./index.html">Home</a></li>
+                <li class="hover:text-azul-sealset hover:border-azul-sealset border-l-2 duration-500"><a class="pl-2" href="./produtos.html">Produtos</a></li>
+                <li class="text-azul-sealset border-azul-sealset border-l-2 duration-500"><a class="pl-2" href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <h2 class="text-2xl lg:text-3xl p-6 font-medium lg:px-32">Solicite uma cotação</h2>
+        <section class="p-6 pt-0 grid gap-2 lg:px-32">
+            <h3 class="text-xl font-medium">E-mail</h3>
+            <p class="text-lg">vendas@sealset.com.br / elaine@sealset.com.br</p>
+            <h3 class="text-xl font-medium">Tel</h3>
+            <p class="text-lg">(11) 2205-5799 / (11) 2944-1778</p>
+            <h3 class="text-xl font-medium">Localização</h3>
+            <p class="text-lg">R. Campinas do Piauí, 492 - Itaquera, São Paulo - SP, 08210-000</p>
+            <h3 class="text-xl font-medium">Horários</h3>
+            <table class="table-auto border border-cinza-escuro md:w-2/4 xl:w-1/4">
+                <thead class="bg-cinza-padrao text-branco">
+                    <tr>
+                        <th class="font-medium border border-cinza-escuro p-2">Dia</th>
+                        <th class="font-medium border border-cinza-escuro p-2">Horário</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center border border-cinza-padrao">
+                    <tr>
+                        <td class="border border-cinza-padrao p-2 font-medium">Segunda</td>
+                        <td class="border border-cinza-padrao p-2 font-medium">8h às 17h</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-cinza-padrao p-2 font-medium">Terça</td>
+                        <td class="border border-cinza-padrao p-2 font-medium">8h às 17h</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-cinza-padrao p-2 font-medium">Quarta</td>
+                        <td class="border border-cinza-padrao p-2 font-medium">8h às 17h</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-cinza-padrao p-2 font-medium">Quinta</td>
+                        <td class="border border-cinza-padrao p-2 font-medium">8h às 17h</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-cinza-padrao p-2 font-medium">Sexta</td>
+                        <td class="border border-cinza-padrao p-2 font-medium">8h às 16h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="grid grid-flow-cols-1 grid-flow-rows-3 gap-4 p-8 text-center font-medium bg-gradient-to-r from-gradient-escuro to-gradient-claro text-cinza-padrao font-500">
+        <img class="lg:w-2/12 w-6/12 justify-self-center sm:w-4/12 md:w-3/12" src="./assets/img/logo.jpg" alt="logotipo sealset do rodapé">
+        <p class="">
+            Endereço: R. Campinas do Piauí, 492 - Itaquera, São Paulo - SP, 08210-000
+        </p>
+        <p class="text-sm">
+            &copy; SEALSET - Indústria e Comércio Ltda.
+        </p>
+    </footer>
+    
+    <script src="./assets/js/menu.js"></script>
+</body>
+</html>

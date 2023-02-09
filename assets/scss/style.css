@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.menu-lateral {
+  position: absolute;
+  left: -80vw;
+}
+
+.menu-lateral--ativo {
+  left: 0;
+}
+
+.carrossel img.slick-slide {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 10rem;
+  transition: all 0.5s;
+}
+.carrossel img.slick-slide:hover {
+  -o-object-fit: fill;
+     object-fit: fill;
+  transform: scale(1.02);
+}
+@media screen and (min-width: 768px) {
+  .carrossel img.slick-slide {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carrossel img.slick-slide {
+    height: 20rem;
+  }
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-prev, .carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-next {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.65;
+  font-size: 0;
+  color: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 0px 0px 2px 2px #000000;
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-prev {
+  left: 2%;
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-next {
+  right: 2%;
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-prev.slick-arrow::before {
+  content: "❮";
+  font-size: 1.5rem;
+}
+.carrossel .carrossel-slide.slick-initialized.slick-slider button.slick-next.slick-arrow::before {
+  content: "❯";
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
